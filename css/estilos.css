@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    background-color: #1768ac;
+
+}
+.classIndice li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    width: 20rem;
+
+}
+.classIndice ul{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5rem;
+
+
+}
+
+.classIndice a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.classIndice nav{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: right;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.classIndiceFooter li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}
+.classIndiceFooter a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.classIndiceFooter nav{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+
+}
+.classListaConsorcios{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: inherit;
+
+}
+.classAdministradores{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: inherit;
+}
+.classAbogada{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: inherit;
+}
+.classProveedores{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: inherit;
+}
+.classDatosDeContacto{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+h3{
+    color: #0022A9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+h4{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+legend{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+}
+label{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+
+}
+input{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+
+}
+p{
+    color: #97dffc;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+
+}
+img{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+}
+#idImagenDeFondoIndex{
+    background-image: url(../images/ImagenCabaHP3.jpg);
+    height: 40rem;
+    display: block;
+    margin: 2.5rem 0rem 0rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#idImagenDeFondoIndex .quienesSomos{
+    display: block;
+    height: 10rem;
+    text-align: center;
+}
+#idImagenDeFondoIndex .detalleIndex{
+    display: block;
+    height: 30rem;
+    text-align: center;
+}
+#idImagenDeFondoIndex .detalleIndex div{
+    display: inline-block;
+    width: 25%;
+    margin: 5rem 5rem; 
+
+}
+#idImagenDeFondoIndex h3{
+    color: #0022A9;
+    text-align: center;
+    display: block;
+
+}
+#idImagenDeFondoIndex p{
+    color: #97dffc;
+    display: inline-block;
+    text-align: center;
+    display: block;
+
+}
+#idImagenDeFondo li{
+    color: #97dffc;
+
+}
+header{
+    background-color: #03256c;
+    margin: 0rem 0rem 2.5rem 0rem;
+
+}
+footer{
+    background-color: #03256c;
+    display: block;
+    height: 12.5rem;
+    
+}
+footer div{
+    display: inline-block;
+    margin: 1.5rem 15% 1rem 15%;
+    
+
+}
+main{
+    margin: 2.5rem
+}
+div{
+    color: white;
+}
+#idImagenDeFondoServicios{
+    background-image: url(../images/ImagenCabaHP3.jpg);
+    height: 40rem;
+    margin: 2.5rem 0rem 0rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.classServiciosAdministracion{
+    display: inline-block;
+    height: 10rem;
+    text-align: center;
+    width: 25%;
+    margin: 0rem 10%;
+}
+.classServiciosAdministracion h3{
+    text-align: center;
+    color: #0022A9
+}
+.classServiciosAbogado{
+    display: inline-block;
+    height: 10rem;
+    text-align: center;
+    width: 25%;
+    margin: 0rem 10%;
+}
+.classServiciosAbogado h3{
+    text-align: center;
+    color: #0022A9;
+}
+#idImagenDeFondoEquipo{
+    background-image: url(../images/ImagenCabaHP3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#idImagenDeFondoEquipo li{
+    color: #97dffc;
+}
+#idImagenDeFondoEquipo article div{
+    display: inline-block;
+    width: 35rem;
+    margin: 2.5rem 10rem 5rem 20rem;
+
+}
+#idImagenDeFondoEquipo article h3{
+    text-align: center;
+    color: #0022A9;
+
+}
+#idImagenDeFondoEquipo .classAbogada{
+    width: 50rem;
+    margin: 2.5rem 60rem;
+    height: 5rem;
+    display: block;
+}
+#idImagenDeFondoEquipo .classAbogada li{
+    color: #97dffc;
+}
+#idImagenDeFondoEquipo h4{
+    color: white;
+}
+#idImagenDeFondoEquipo fieldset{
+    display: inline-block;
+    width: 20rem;
+    height: 4rem;
+    padding: 1rem;
+    border-color: #1768ac;
+    border-style: groove;
+    margin: 2rem 5rem;
+
+}
+#idImagenDeFondoEquipo ul{
+    list-style: none;
+}
+#idImagenDeFondoEquipo fieldset ul li{
+    color: #97dffc;
+
+}
+#idImagenDeFondoConsorcios{
+    background-image: url(../images/ImagenCabaHP3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#idImagenDeFondoConsorcios iframe{
+    display: inline-block;
+    width: 60rem;
+    height: 50rem;
+    margin: 2.5rem;
+}
+#idImagenDeFondoConsorcios img{
+    display: inline-block;
+    width: 60rem;
+    height: 50rem;
+    margin: 2.5rem;
+}
+#idImagenDeFondoConsorcios ul{
+    display: inline-block;
+    margin: 2.5rem;
+    width: 60rem;
+    margin: 1.5rem 2.5rem 2.5rem 68rem;
+
+}
+#idImagenDeFondoConsorcios li{
+    display: inline-block;
+    margin: 0rem 1rem 2.5rem 1rem;
+    width: 15rem;
+    color: #97dffc
+
+}
+#idImagenDeFondoContacto{
+    background-image: url(../images/ImagenCabaHP3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#idImagenDeFondoContacto form fieldset input{
+    color: black;
+
+}
+#idImagenDeFondoContacto label{
+    color: #97dffc;
+    display: inline-block;
+}
+#idImagenDeFondoContacto input{
+    display: inline-block;
+
+}
+#idImagenDeFondoContacto form fieldset{
+    display: inline-block;
+    
+}
+#idImagenDeFondoContacto .datos{
+    display: inline-block;
+    margin: 2.5rem 15rem;
+    padding: 1rem;
+    border-color: #1768ac;
+    border-style: groove;
+
+}
+#idImagenDeFondoContacto .consulta{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    font-style: none;
+    text-align: left;
+    text-decoration: none;
+    margin: 0.5rem 45rem 0.5rem 50rem;
+    padding: 1rem;
+    border-color: #1768ac;
+    border-style: groove;
+}
+#idImagenDeFondoContacto .botones{
+    border-color: #1768ac;
+    border-style: groove;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 2.5rem 50rem 2.5rem 55rem
+
+}

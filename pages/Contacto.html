@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto Adm Flores</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header id="Contacto"><h1>Administracion Estudio Flores</h1> <!--encabezado-->
+        <nav class="classIndice"> <!--menu de navegacion-->
+            <ul class="classIndice"><!--lista no ordenada-->
+                <li class="classIndice"><a href="../index.html" class="classIndice">Inicio</a></li>
+                <li class="classIndice"><a href="../pages/Servicios.html" class="classIndice">Servicios</a></li>
+                <li class="classIndice"><a href="../pages/Equipo.html" class="classIndice">Equipo</a></li>
+                <li class="classIndice"><a href="../pages/Consorcios administrados.html" class="classIndice">Consorcios administrados</a></li>
+                <li class="classIndice">Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <main><h2>CONTACTO</h2></main>
+    <section id="idImagenDeFondoContacto">
+        <h3>Dejanos tu consulta</h3>
+        <form action=""><!--formulario-->
+            <fieldset class="datos">
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label><!--etiqueta del formulario-->
+                <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan"><!--tipo de contenido-->
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ej: Martinez">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1112345678">
+                <label for="email">Mail:</label>
+                <input type="email" name="email" id="email" placeholder="Ej: abcd@efgh.com.ar">
+            </fieldset>
+            <fieldset class="consulta">
+                <label for="consulta">Deja tu consulta:</label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Ej: Pedido de presupuesto"></textarea><!--cols y rows es para el tamaño del box-->
+            </fieldset>
+            <fieldset class="botones">
+                <input type="reset" value="Resetear formulario"><!--botones-->
+                <input type="submit" value="Enviar formulario">
+            </fieldset>
+        </form>
+    </section>
+    <footer><!--pie de pagina-->
+        <div>
+            <nav class="classIndiceFooter">
+                <ul class="classIndiceFooter">
+                    <li><a href="../index.html" class="classIndiceFooter">Inicio</a></li>
+                    <li><a href="../pages/Servicios.html" class="classIndiceFooter">Servicios</a></li>
+                    <li><a href="../pages/Equipo.html" class="classIndiceFooter">Equipo</a></li>
+                    <li><a href="../pages/Consorcios administrados.html" class="classIndiceFooter">Consorcios administrados</a></li>
+                    <li><a href="#Contacto" class="classIndiceFooter">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <ul class="classDatosDeContacto">Datos de contacto:
+                <li>Telefono: 11-3672-7733</li>
+                <li>Mail: estudiofloresadm@gmail.com</li>
+                <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
