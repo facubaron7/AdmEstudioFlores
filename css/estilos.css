@@ -11,7 +11,13 @@ body{
 
 }
 h1 {
-    color: white
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
 }
 h2 {
     color: white
@@ -23,7 +29,7 @@ h3 {
 p {
     color: lightblue
 }
-.Indice {
-    background-color: #03256c
 
+.indice {
+    background-color: #03256c;
 }
