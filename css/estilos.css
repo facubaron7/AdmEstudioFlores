@@ -11,7 +11,7 @@ body{
 
 }
 h1 {
-    color: white;
+    color: #0022A9;
     font-family: 'Times New Roman', Times, serif;
     font-size: 5.5rem;
     font-weight: bolder;
@@ -23,13 +23,99 @@ h2 {
     color: white
 }
 h3 {
-    color: #0022A9
+    color: white;
+    font-size: 3.5rem;
 
 }
 p {
-    color: lightblue
+    color: #0cb7f2;
+    font-size: 1.4rem;
+
 }
 
-.indice {
-    background-color: #03256c;
+#Inicio {
+    background-color: #0cb7f2;
 }
+
+#Inicio h1 {
+    font-family: "Times New Roman", serif;
+    color: white;
+}
+
+.bg-custom-color {
+    background-color: #0cb7f2;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+
+}
+.nav-link {
+    color: black;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Times New Roman", serif;
+}
+
+.idImagenDeFondoIndex {
+    background-image: url("../images/ImagenCabaHP3.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quienesSomos,
+.detalleIndex {
+    margin-bottom: 20px;
+}
+
+.detalleIndex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.detalleIndex div {
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .detalleIndex div {
+    flex-basis: calc(100% - 10px);
+    }
+}
+main {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
