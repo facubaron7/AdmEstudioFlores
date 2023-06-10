@@ -11,7 +11,7 @@ body{
 
 }
 h1 {
-    color: #0022A9;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: 5.5rem;
     font-weight: bolder;
@@ -20,7 +20,10 @@ h1 {
     text-decoration: none;
 }
 h2 {
-    color: white
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Times New Roman", serif;
 }
 h3 {
     color: white;
@@ -34,6 +37,9 @@ p {
 }
 
 #Inicio {
+    background-color: #0cb7f2;
+}
+#Servicios {
     background-color: #0cb7f2;
 }
 
@@ -64,18 +70,20 @@ p {
     color: black;
 }
 
-.mainIndex h2{
+.mainIndex {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.title {
+.mainIndex h2{
+    text-align: center;
     color: white;
     text-align: center;
     font-size: 4rem;
     font-family: "Times New Roman", serif;
 }
+
 
 .ImagenDeFondoIndex {
     background-image: url("../images/ImagenCabaHP3.jpg");
@@ -128,7 +136,7 @@ section {
 
 .footerCompleto {
     font-family: "Times New Roman", Times, serif;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: black;
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
@@ -163,13 +171,54 @@ section {
 }
 
 
-body {
+
+.ImagenDeFondoServicios {
+    background-image: url("../images/ImagenCabaHP3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ImagenDeFondoServicios {
     display: grid;
-    grid-template-rows: 15% 10% 55% 20%;
-    min-height: 100vh;
-    min-width: 100vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    height: 50vh;
+}
+
+.ImagenDeFondoServicios h3,
+.ImagenDeFondoServicios p {
+    font-family: "Times New Roman", serif;
+    font-size: 1.4rem;
+    color: #0cb7f2;
+    text-align: center;
+}
+
+.ImagenDeFondoServicios h3 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+
+header {
+    height: 25%;
+}
+
+main {
+    height: 15%;
+}
+
+section {
+    height: 35%;
 }
 
 footer {
-    height: 20%;
+    height: 25%;
+}
+
+@media (max-width: 768px) {
+    footer .footerCompleto {
+    display: flex;
+    flex-direction: column;
+    }
 }
