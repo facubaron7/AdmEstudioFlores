@@ -64,6 +64,12 @@ p {
     color: black;
 }
 
+.mainIndex h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     color: white;
     text-align: center;
@@ -71,7 +77,7 @@ p {
     font-family: "Times New Roman", serif;
 }
 
-.idImagenDeFondoIndex {
+.ImagenDeFondoIndex {
     background-image: url("../images/ImagenCabaHP3.jpg");
     background-size: cover;
     background-position: center;
@@ -110,6 +116,8 @@ main {
     padding: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    display: flex;
+
 }
 
 section {
@@ -118,4 +126,50 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.footerCompleto {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.4rem;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-self: center;
+    grid-template-areas: 
+    ". indice . contacto .";
+    background-color: #0cb7f2;
+    
+    
 
+}
+
+.IndiceFooter {
+    grid-area: indice;
+
+}
+
+.DatosDeContacto {
+    grid-area: contacto;
+}
+
+.footerCompleto a {
+    color: black;
+    text-decoration: none;
+}
+
+.footerCompleto ul {
+    list-style: none;
+    text-align: center;
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: 15% 10% 55% 20%;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+footer {
+    height: 20%;
+}
