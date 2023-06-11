@@ -5,95 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Equipo Adm Flores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header id="Equipo"><h1>Administracion Estudio Flores</h1> <!--encabezado-->
-        <nav class="classIndice"> <!--menu de navegacion-->
-            <ul class="classIndice"><!--lista no ordenada-->
-                <li class="classIndice"><a href="../index.html" class="classIndice">Inicio</a></li>
-                <li class="classIndice"><a href="../pages/Servicios.html" class="classIndice">Servicios</a></li>
-                <li class="classIndice">Equipo</li>
-                <li class="classIndice"><a href="../pages/Consorcios administrados.html" class="classIndice">Consorcios administrados</a></li>
-                <li class="classIndice"><a href="../pages/Contacto.html" class="classIndice">Contacto</a></li>
-            </ul>
-        </nav>
+    <header id="Equipo">
+        <div class="Indice container-fluid row">
+            <h1 class="col-12">Administracion Estudio Flores</h1>
+            <nav class="navbar navbar-expand-lg bg-custom-color container-fluid col-12">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#Indice"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse Indice" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/Servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/Consorcios administrados.html">Consorcios administrados</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main><h2>NUESTRO EQUIPO</h2></main>
-    <section id="idImagenDeFondoEquipo">
-        <article><h3>Administradores de Consorcios</h3>
-            <div>
-                <ul class="classAdministradores">
-                    <li>Administrador: Emilio Baron</li>
-                    <li>Matricula:</li>
-                    <li>Titulo:</li>
-                    <li>Institucion donde estudió:</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="classAdministradores">
-                    <li>Administradora: Maria Elena Flores</li>
-                    <li>Matricula:</li>
-                    <li>Titulo:</li>
-                    <li>Institucion donde estudió:</li>
-                </ul>
-            </div>
+    <main class="mainIndex container-fluid row">
+        <h2>NUESTRO EQUIPO</h2>
+    </main>
+    <section class="ImagenDeFondoEquipo container-fluid row">
+            <h3>Administradores de Consorcios</h3>
+        <article class="Administradores">
+                <div class="emilio">
+                    <ul>
+                        <li>Administrador: Emilio Baron</li>
+                        <li>Matricula:</li>
+                        <li>Titulo:</li>
+                        <li>Institucion donde estudió:</li>
+                    </ul>
+                </div>
+                <div class="maria">
+                    <ul>
+                        <li>Administradora: Maria Elena Flores</li>
+                        <li>Matricula:</li>
+                        <li>Titulo:</li>
+                        <li>Institucion donde estudió:</li>
+                    </ul>
+                </div>
         </article>
-        <article><h3>Abogada</h3>
-            <ul class="classAbogada">
+        <h3>Abogada</h3>
+        <article class="Abogada">
+            <ul>
                 <li>Abogada: Maria Elena Flores</li>
                 <li>Matricula:</li>
                 <li>Titulo:</li>
                 <li>Institucion donde estudió:</li>
             </ul>
         </article>
-        <article><h4>Nuestros proveedores</h4>
-            <fieldset>
-                <ul class="classProveedores">
-                    <li>LOMAR</li>
-                    <li>Servicio de fumigacion</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <ul class="classProveedores">
-                    <li>ASCENSORES AL SUR</li>
-                    <li>Ascensorista</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <ul class="classProveedores">
-                    <li>E.G. PLOMERIA INTEGRAL</li>
-                    <li>Servicio de plomeria</li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <ul class="classProveedores">
-                    <li>ELECTROZEM</li>
-                    <li>Electricista</li>
-                </ul>
-            </fieldset>
+        <h4>Nuestros proveedores</h4>
+        <article class="Proveedores">
+                <div class="lomar">
+                    <fieldset>
+                        <ul>
+                            <li>LOMAR</li>
+                            <li>Servicio de fumigacion</li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="ascensor">
+                    <fieldset>
+                        <ul>
+                            <li>ASCENSORES AL SUR</li>
+                            <li>Ascensorista</li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="plomero">
+                    <fieldset>
+                        <ul>
+                            <li>E.G. PLOMERIA INTEGRAL</li>
+                            <li>Servicio de plomeria</li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="electricista">
+                    <fieldset>
+                        <ul>
+                            <li>ELECTROZEM</li>
+                            <li>Electricista</li>
+                        </ul>
+                    </fieldset>
+                </div>
         </article>
     </section>
-    <footer>
-        <div>
-            <nav class="classIndiceFooter">
-                <ul class="classIndiceFooter">
-                    <li><a href="../index.html" class="classIndiceFooter">Inicio</a></li>
-                    <li><a href="../pages/Servicios.html" class="classIndiceFooter">Servicios</a></li>
-                    <li><a href="#Equipo" class="classIndiceFooter">Equipo</a></li>
-                    <li><a href="../pages/Consorcios administrados.html" class="classIndiceFooter">Consorcios administrados</a></li>
-                    <li><a href="../pages/Contacto.html" class="classIndiceFooter">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
-            <ul class="classDatosDeContacto">Datos de contacto:
-                <li>Telefono: 11-3672-7733</li>
-                <li>Mail: estudiofloresadm@gmail.com</li>
-                <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
-            </ul>
-        </div>
-    </footer>
+    <footer class="container-fluid row">
+            <div class="footerCompleto">
+                <div class="IndiceFooter">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio </a></li>
+                            <li><a href="../pages/Servicios.html">Servicios</a></li>
+                            <li><a href="#Equipo">Equipo</a></li>
+                            <li><a href="../pages/Consorcios administrados.html">Consorcios administrados</a></li>
+                            <li><a href="../pages/Contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="DatosDeContacto">
+                    <ul>Datos de contacto:
+                        <li>Telefono: 11-3672-7733</li>
+                        <li>Mail: estudiofloresadm@gmail.com</li>
+                        <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
+
