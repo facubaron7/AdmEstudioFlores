@@ -10,36 +10,8 @@ body{
     background-color: #1768ac;
 
 }
-h1 {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 5.5rem;
-    font-weight: bolder;
-    font-style: none;
-    text-align: center;
-    text-decoration: none;
-}
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-    font-family: "Times New Roman", serif;
-}
-h3 {
-    color: white;
-    font-size: 3.5rem;
-
-}
-p {
-    color: #0cb7f2;
-    font-size: 1.4rem;
-
-}
-
+/*index*/
 #Inicio {
-    background-color: #0cb7f2;
-}
-#Servicios {
     background-color: #0cb7f2;
 }
 
@@ -120,19 +92,8 @@ p {
     flex-basis: calc(100% - 10px);
     }
 }
-main {
-    padding: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
 
-}
-
-section {
-    padding: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
+/*footer*/
 
 .footerCompleto {
     font-family: "Times New Roman", Times, serif;
@@ -170,15 +131,18 @@ section {
     text-align: center;
 }
 
+/*Pagina Servicios*/
+
+
+#Servicios {
+    background-color: #0cb7f2;
+}
 
 
 .ImagenDeFondoServicios {
     background-image: url("../images/ImagenCabaHP3.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.ImagenDeFondoServicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -200,21 +164,7 @@ section {
 }
 
 
-header {
-    height: 25%;
-}
-
-main {
-    height: 15%;
-}
-
-section {
-    height: 35%;
-}
-
-footer {
-    height: 25%;
-}
+/* media queries*/
 
 @media (max-width: 768px) {
     footer .footerCompleto {
@@ -222,3 +172,65 @@ footer {
     flex-direction: column;
     }
 }
+@media (max-width: 768px) {
+    .ImagenDeFondoServicios {
+    display: block;
+    height: auto;
+    }
+}
+
+/*selectores solos*/
+
+h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Times New Roman", serif;
+}
+h3 {
+    color: white;
+    font-size: 3.5rem;
+
+}
+p {
+    color: #0cb7f2;
+    font-size: 1.4rem;
+
+}
+
+header {
+    height: 25%;
+}
+
+main {
+    height: 15%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+section {
+    height: 35%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    height: 25%;
+}
+
+/*Pagina Equipo*/
+
+
+
