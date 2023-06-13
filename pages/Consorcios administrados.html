@@ -5,53 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consorcios Adm Flores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header id="Consorcios administrados"><h1>Administracion Estudio Flores</h1> <!--encabezado-->
-        <nav class="classIndice"> <!--menu de navegacion-->
-            <ul class="classIndice"><!--lista no ordenada-->
-                <li class="classIndice"><a href="../index.html" class="classIndice">Inicio</a></li>
-                <li class="classIndice"><a href="../pages/Servicios.html" class="classIndice">Servicios</a></li>
-                <li class="classIndice"><a href="../pages/Equipo.html" class="classIndice">Equipo</a></li>
-                <li class="classIndice">Consorcios administrados</li>
-                <li class="classIndice"><a href="../pages/Contacto.html" class="classIndice">Contacto</a></li>
-            </ul>
-        </nav>
+    <header id="ConsorciosAdministrados">
+        <div class="Indice container-fluid row">
+                <h1 class="col-12">Administracion Estudio Flores</h1>
+                <nav class="navbar navbar-expand-lg bg-custom-color container-fluid col-12">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#Indice"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse Indice" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../pages/Servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../pages/Equipo.html">Equipo</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Consorcios administrados</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     </header>
-    <main><h2>CONSORCIOS ADMINISTRADOS</h2></main>
-    <section id="idImagenDeFondoConsorcios">
-            <img src="../images/edificiosAdministrados.png" alt="Imagen de muestra de un edificio administrado">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WAbG0ROUmCbh5xCsSzHPSumtsIkVfSI&ehbc=2E312F" width="640" height="480"></iframe>
-        <ul class="classListaConsorcios">
-            <li>Agote 2394</li>
-            <li>Behring 2552</li>
-            <li>Cabezon 2824</li>
-            <li>Campana 4870</li>
-            <li>Machain 3273</li>
-            <li>Vuelta de Obligado 4001</li>
-        </ul>
-    </section>
-    <footer>
-        <div>
-            <nav class="classIndiceFooter">
-                <ul class="classIndiceFooter">
-                    <li><a href="../index.html" class="classIndiceFooter">Inicio</a></li>
-                    <li><a href="../pages/Servicios.html" class="classIndiceFooter">Servicios</a></li>
-                    <li><a href="../pages/Equipo.html" class="classIndiceFooter">Equipo</a></li>
-                    <li><a href="#Consorcios administrados" class="classIndiceFooter">Consorcios administrados</a></li>
-                    <li><a href="../pages/Contacto.html" class="classIndiceFooter">Contacto</a></li>
+    <main class="mainIndex container-fluid row">
+        <h2>CONSORCIOS ADMINISTRADOS</h2>
+    </main>
+    <section class="ImagenDeFondoConsorcios container-fluid row">
+        <div class="card foto" style="width: 20rem;">
+            <img src="../images/edificiosAdministrados.png" class="card-img-top" alt="Imagen de Agote 2394">
+            <div class="card-body">
+                <p class="card-text ">Este es uno de los edificios que administramos actualmente, ubicado en la calle Agote 2394, en el barrio de Recoleta.</p>
+            </div>
+        </div>
+        <div class="listaConsorcios">
+            <div  class="listaConsorcios-h4">
+                <h4>Listado de Consorcios</h4>
+            </div>
+            <div  class="listaConsorcios-lista">
+                <ul>
+                    <li>Agote 2394</li>
+                    <li>Behring 2552</li>
+                    <li>Cabezon 2824</li>
+                    <li>Campana 4870</li>
+                    <li>Machain 3273</li>
+                    <li>Vuelta de Obligado 4001</li>
                 </ul>
-            </nav>
+            </div>
         </div>
-        <div>
-            <ul class="classDatosDeContacto">Datos de contacto:
-                <li>Telefono: 11-3672-7733</li>
-                <li>Mail: estudiofloresadm@gmail.com</li>
-                <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
-            </ul>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WAbG0ROUmCbh5xCsSzHPSumtsIkVfSI&ehbc=2E312F" width="640" height="480"></iframe>
         </div>
-    </footer>
+    </section>
+    <footer class="container-fluid row">
+            <div class="footerCompleto">
+                <div class="IndiceFooter">
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Inicio </a></li>
+                            <li><a href="../pages/Servicios.html">Servicios</a></li>
+                            <li><a href="../pages/Equipo.html">Equipo</a></li>
+                            <li><a href="#Consorcios administrados">Consorcios administrados</a></li>
+                            <li><a href="../pages/Contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="DatosDeContacto">
+                    <ul>Datos de contacto:
+                        <li>Telefono: 11-3672-7733</li>
+                        <li>Mail: estudiofloresadm@gmail.com</li>
+                        <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
