@@ -213,6 +213,12 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    #Equipo .container-fluid {
+        display: block;
+        text-align: center;
+    }
+}
 
 
 /*selectores solos*/
@@ -270,6 +276,12 @@ section {
 
 footer {
     height: 25%;
+}
+
+legend {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Times New Roman", serif;
 }
 
 /*Pagina Equipo*/

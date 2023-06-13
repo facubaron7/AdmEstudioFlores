@@ -43,13 +43,44 @@
             </nav>
         </div>
     </header>
-    <main><h2>CONTACTO</h2></main>
-    <section id="idImagenDeFondoContacto">
-        <h3>Dejanos tu consulta</h3>
-        <form action=""><!--formulario-->
+    <main class="mainIndex container-fluid row">
+        <h2>CONTACTO</h2>
+    </main>
+    <section class="ImagenDeFondoContacto">
+        <div>
+            <h3>Dejanos tu consulta</h3>
+        </div>
+        <div>
+            <legend>Datos personales</legend>
+        </div>
+        <div class="mb-3 nombre">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+        </div>
+        <div class="mb-3 apellido">
+            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Gutierrez">
+        </div>
+        <div class="mb-3 telefono">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234567890">
+        </div>
+        <div class="mb-3 mail">
+            <label for="exampleFormControlInput1" class="form-label">Mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3 consulta">
+            <label for="exampleFormControlTextarea1" class="form-label">Redacta tu consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="botones">
+            <input class="btn btn-primary" type="submit" value="Enviar formulario">
+            <input class="btn btn-primary" type="reset" value="Resetear formulario">
+        </div>
+        <form action="">
             <fieldset class="datos">
-                <legend>Datos personales</legend>
-                <label for="nombre">Nombre:</label><!--etiqueta del formulario-->
+                
+                <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan"><!--tipo de contenido-->
                 <label for="apellido">Apellido:</label>
                 <input type="text" name="apellido" id="apellido" placeholder="Ej: Martinez">
@@ -63,12 +94,12 @@
                 <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Ej: Pedido de presupuesto"></textarea><!--cols y rows es para el tamaño del box-->
             </fieldset>
             <fieldset class="botones">
-                <input type="reset" value="Resetear formulario"><!--botones-->
+                <input type="reset" value="Resetear formulario">
                 <input type="submit" value="Enviar formulario">
             </fieldset>
         </form>
     </section>
-    <footer><!--pie de pagina-->
+    <footer>
         <div>
             <nav class="classIndiceFooter">
                 <ul class="classIndiceFooter">
