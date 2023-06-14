@@ -220,6 +220,17 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    .ImagenDeFondoContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "formulario-h3"
+        "datos"
+        "consulta"
+        "botones";
+    }
+}
 
 /*selectores solos*/
 
@@ -494,6 +505,7 @@ legend {
     "formulario-h3 formulario-h3"
     "datos consulta"
     "botones botones";
+    background-image: url("../images/ImagenCabaHP3.jpg");
 }
 
 .formulario-h3 {
@@ -502,7 +514,8 @@ legend {
     grid-area: formulario-h3;
 }
 
-.datos {  display: grid;
+.datos {  
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 0px 0px;
@@ -532,4 +545,23 @@ legend {
     justify-self: center;
     align-self: center;
     grid-area: botones;
+}
+
+.nombre label,
+.apellido label,
+.telefono label,
+.mail label {
+font-size: 1.4rem;
+font-family: "Times New Roman", Times, serif;
+color: #0cb7f2;
+}
+
+#exampleFormControlTextarea1 {
+    height: 30rem;
+}
+
+.consulta label {
+    font-size: 1.4rem;
+    font-family: "Times New Roman", Times, serif;
+    color: #0cb7f2;
 }

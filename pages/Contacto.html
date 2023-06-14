@@ -46,13 +46,13 @@
     <main class="mainIndex container-fluid row">
         <h2>CONTACTO</h2>
     </main>
-    <section class="ImagenDeFondoContacto">
+    <section class="ImagenDeFondoContacto container-fluid">
         <div class="formulario-h3">
             <h3>Dejanos tu consulta</h3>
         </div>
         <div class="datos">
-            <legend>Datos personales</legend>
             <div class="mb-3 nombre">
+                    <legend>Datos personales</legend>
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
             </div>
@@ -78,24 +78,26 @@
             <input class="btn btn-primary" type="reset" value="Resetear formulario">
         </div>
     </section>
-    <footer>
-        <div>
-            <nav class="classIndiceFooter">
-                <ul class="classIndiceFooter">
-                    <li><a href="../index.html" class="classIndiceFooter">Inicio</a></li>
-                    <li><a href="../pages/Servicios.html" class="classIndiceFooter">Servicios</a></li>
-                    <li><a href="../pages/Equipo.html" class="classIndiceFooter">Equipo</a></li>
-                    <li><a href="../pages/Consorcios administrados.html" class="classIndiceFooter">Consorcios administrados</a></li>
-                    <li><a href="#Contacto" class="classIndiceFooter">Contacto</a></li>
+    <footer class="container-fluid row">
+        <div class="footerCompleto">
+            <div class="IndiceFooter">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio </a></li>
+                        <li><a href="../pages/Servicios.html">Servicios</a></li>
+                        <li><a href="../pages/Equipo.html">Equipo</a></li>
+                        <li><a href="../pages/Consorcios administrados.html">Consorcios administrados</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="DatosDeContacto">
+                <ul>Datos de contacto:
+                    <li>Telefono: 11-3672-7733</li>
+                    <li>Mail: estudiofloresadm@gmail.com</li>
+                    <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
                 </ul>
-            </nav>
-        </div>
-        <div>
-            <ul class="classDatosDeContacto">Datos de contacto:
-                <li>Telefono: 11-3672-7733</li>
-                <li>Mail: estudiofloresadm@gmail.com</li>
-                <li>Ubicacion: Melian 2487, Entre Piso, CABA</li>
-            </ul>
+            </div>
         </div>
     </footer>
 </body>
