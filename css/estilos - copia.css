@@ -5,9 +5,11 @@
 html{
     font-size: 62.5%;
 
+
 }
 body{
     background-color: #1768ac;
+    height: 100%;
 
 }
 /*index*/
@@ -145,6 +147,7 @@ body{
     background-position: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: inherit;
     gap: 20px;
     align-items: center;
     height: 50vh;
@@ -241,7 +244,6 @@ h1 {
     font-weight: bolder;
     font-style: none;
     text-align: center;
-    text-decoration: none;
 }
 h2 {
     color: white;
