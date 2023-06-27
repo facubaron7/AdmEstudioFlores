@@ -1,0 +1,18 @@
+@import "variables";
+@import "index";
+@import "servicios";
+@import "nosotros";
+@import "consorcios";
+@import "contacto";
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+background-color: $colordefondo;
+height: 100%;
+}

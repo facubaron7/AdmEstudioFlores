@@ -1,3 +1,97 @@
+#Inicio {
+  background-color: #1768ac;
+}
+#Inicio div h1 {
+  font-family: "Times New Roman", serif;
+  color: white;
+}
+#Inicio div .bg-custom-color {
+  background-color: #0cb7f2;
+}
+#Inicio div .bg-custom-color div .Indice .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#Inicio div .bg-custom-color div .Indice .navbar-nav .nav-link {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
 
+.mainIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIndex h2 {
+  text-align: center;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Times New Roman", serif;
+}
+
+.ImagenDeFondoIndex {
+  background-image: url("../images/ImagenCabaHP3.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ImagenDeFondoIndex .quienesSomos {
+  margin-bottom: 20px;
+}
+.ImagenDeFondoIndex .detalleIndex {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ImagenDeFondoIndex .detalleIndex div {
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+}
+
+.footer .footerCompleto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
+  align-self: center;
+  grid-template-areas: ". indice . contacto .";
+  background-color: #0cb7f2;
+}
+.footer .footerCompleto .IndiceFooter {
+  grid-area: indice;
+}
+.footer .footerCompleto .DatosDeContacto {
+  grid-area: contacto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1768ac;
+  height: 100%;
+}
 
 /*# sourceMappingURL=estilos.css.map */
