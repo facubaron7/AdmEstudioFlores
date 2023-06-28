@@ -22,29 +22,96 @@
         }
     }
 }
-.ImagenDeFondoIndex {
+.ImagenDeFondoIndex {  
     background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
     font-family: $fuenteprincipal;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .quienesSomos {
-        margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "quienesSomos"
+    "detalleIndex";
+    .quienesSomos {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "quienesSomos-h3"
+        "quienesSomos-texto";
+        grid-area: quienesSomos;
+        .quienesSomos-h3 { 
+            grid-area: quienesSomos-h3;
+        }
+        .quienesSomos-texto {
+            grid-area: quienesSomos-texto;
+        }
     }
-    .detalleIndex{
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        div {
-            flex-basis: calc(33.33% - 10px);
-            margin: 5px;
-            padding: 10px;
+    .detalleIndex {  
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "mision vision valores";
+        grid-area: detalleIndex;
+        .mision {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.7fr 1.3fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "mision-h3"
+            "mision-texto";
+            grid-area: mision;
+            .mision-h3 { 
+                grid-area: mision-h3; 
+            }
+            .mision-texto {
+                grid-area: mision-texto; 
+            }
+        }
+        .vision {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.7fr 1.3fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "vision-h3"
+            "vision-texto";
+            grid-area: vision;
+            .vision-h3 { 
+                grid-area: vision-h3; 
+            }
+            .vision-texto { 
+                grid-area: vision-texto; 
+            }
+        }
+        .valores {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.7fr 1.3fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+            "valores-h3"
+            "valores-texto";
+            grid-area: valores;
+            .valores-h3 { 
+                grid-area: valores-h3; 
+            }
+            .valores-texto { 
+                grid-area: valores-texto; 
+            }
         }
     }
 }

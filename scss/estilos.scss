@@ -4,7 +4,7 @@
 @import "equipo";
 @import "consorcios";
 @import "contacto";
-@import "selectoressolos";
+@import "mediaqueries";
 * {
     margin: 0;
     padding: 0;
@@ -17,29 +17,104 @@ background-color: $colordefondo;
 height: 100%;
 }
 footer .footerCompleto {
-        font-family: $fuenteprincipal;
-        font-size: 1.7rem;
-        color: black;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
-        grid-template-rows: 1fr;
+    font-family: $fuenteprincipal;
+    background-color: $colordefuente;
+    font-size: 1.7rem;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "IndiceFooter DatosDeContacto";
+    .IndiceFooter {
         justify-self: center;
         align-self: center;
-        grid-template-areas: 
-        ". indice . contacto .";
-        background-color: $colordefuente;
-        .IndiceFooter {
-            grid-area: indice;
-            nav ul {
-                list-style: none;
-                text-align: center;
-                a {
-                    color: black;
-                    text-decoration: none;
-                }
+        grid-area: IndiceFooter;
+        nav ul {
+            list-style: none;
+            text-align: center;
+            a {
+                color: black;
+                text-decoration: none;
             }
         }
-        .DatosDeContacto {
-            grid-area: contacto;
+    }
+    .DatosDeContacto {
+        justify-self: center;
+        align-self: center;
+        grid-area: DatosDeContacto;
+        ul {
+            list-style: none;
+            text-align: center;
         }
     }
+}
+
+h1 {
+    color: $colordetitulos;
+    font-family: $fuenteprincipal;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-style: none;
+    text-align: center;
+}
+h2 {
+    color: $colordetitulos;
+    text-align: center;
+    font-size: 4rem;
+    font-family: $fuenteprincipal;
+}
+h3 {
+    color: $colordetitulos;
+    font-size: 3.5rem;
+    font-family: $fuenteprincipal;
+}
+
+h4 {
+    color: $colordetitulos;
+    font-size: 2.5rem;
+    font-family: $fuenteprincipal;
+}
+p {
+    color: $colordefuente;
+    font-size: $tamanodetexto;
+    font-family: $fuenteprincipal;
+}
+
+header {
+    height: 25%;
+}
+
+main {
+    height: 15%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 35%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    height: 25%;
+}
+
+legend {
+    color: $colordetitulos;
+    font-size: 1.8rem;
+    font-family: $fuenteprincipal;
+}
+label {
+    font-size: $tamanodetexto;
+    font-family: $fuenteprincipal;
+    color: $colordefuente;
+}

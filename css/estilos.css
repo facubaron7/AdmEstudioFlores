@@ -27,25 +27,81 @@
   background-position: center;
   font-family: "Times New Roman", serif;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "quienesSomos" "detalleIndex";
 }
 .ImagenDeFondoIndex .quienesSomos {
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "quienesSomos-h3" "quienesSomos-texto";
+  grid-area: quienesSomos;
+}
+.ImagenDeFondoIndex .quienesSomos .quienesSomos-h3 {
+  grid-area: quienesSomos-h3;
+}
+.ImagenDeFondoIndex .quienesSomos .quienesSomos-texto {
+  grid-area: quienesSomos-texto;
 }
 .ImagenDeFondoIndex .detalleIndex {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "mision vision valores";
+  grid-area: detalleIndex;
 }
-.ImagenDeFondoIndex .detalleIndex div {
-  flex-basis: calc(33.33% - 10px);
-  margin: 5px;
-  padding: 10px;
+.ImagenDeFondoIndex .detalleIndex .mision {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "mision-h3" "mision-texto";
+  grid-area: mision;
+}
+.ImagenDeFondoIndex .detalleIndex .mision .mision-h3 {
+  grid-area: mision-h3;
+}
+.ImagenDeFondoIndex .detalleIndex .mision .mision-texto {
+  grid-area: mision-texto;
+}
+.ImagenDeFondoIndex .detalleIndex .vision {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "vision-h3" "vision-texto";
+  grid-area: vision;
+}
+.ImagenDeFondoIndex .detalleIndex .vision .vision-h3 {
+  grid-area: vision-h3;
+}
+.ImagenDeFondoIndex .detalleIndex .vision .vision-texto {
+  grid-area: vision-texto;
+}
+.ImagenDeFondoIndex .detalleIndex .valores {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "valores-h3" "valores-texto";
+  grid-area: valores;
+}
+.ImagenDeFondoIndex .detalleIndex .valores .valores-h3 {
+  grid-area: valores-h3;
+}
+.ImagenDeFondoIndex .detalleIndex .valores .valores-texto {
+  grid-area: valores-texto;
 }
 
 .ImagenDeFondoServicios {
@@ -286,6 +342,136 @@
   grid-area: botones;
 }
 
+@media screen and (max-width: 768px) {
+  .ImagenDeFondoIndex .quienesSomos {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .ImagenDeFondoIndex .detalleIndex {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "mision" "vision" "valores";
+  }
+  .ImagenDeFondoIndex .detalleIndex .mision {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .ImagenDeFondoIndex .detalleIndex .vision {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .ImagenDeFondoIndex .detalleIndex .valores {
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footerCompleto {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "IndiceFooter" "DatosDeContacto";
+  }
+  footer .footerCompleto .IndiceFooter {
+    grid-area: IndiceFooter;
+  }
+  footer .footerCompleto .DatosDeContacto {
+    grid-area: DatosDeContacto;
+  }
+}
+@media (max-width: 768px) {
+  .ImagenDeFondoServicios {
+    display: block;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .ImagenDeFondoEquipo .Administradores,
+  .ImagenDeFondoEquipo .Abogada,
+  .ImagenDeFondoEquipo .Proveedores {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+  }
+  .ImagenDeFondoEquipo .administradores-divs,
+  .ImagenDeFondoEquipo .abogada-div,
+  .ImagenDeFondoEquipo .proveedores-divs {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .ImagenDeFondoConsorcios .foto,
+  .ImagenDeFondoConsorcios .listaConsorcios,
+  .ImagenDeFondoConsorcios .mapa {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+  }
+  .ImagenDeFondoEquipo .listaConsorcios-lista {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #Equipo .container-fluid {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .ImagenDeFondoContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "formulario-h3" "datos" "consulta" "botones";
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1768ac;
+  height: 100%;
+}
+
+footer .footerCompleto {
+  font-family: "Times New Roman", serif;
+  background-color: #0cb7f2;
+  font-size: 1.7rem;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "IndiceFooter DatosDeContacto";
+}
+footer .footerCompleto .IndiceFooter {
+  justify-self: center;
+  align-self: center;
+  grid-area: IndiceFooter;
+}
+footer .footerCompleto .IndiceFooter nav ul {
+  list-style: none;
+  text-align: center;
+}
+footer .footerCompleto .IndiceFooter nav ul a {
+  color: black;
+  text-decoration: none;
+}
+footer .footerCompleto .DatosDeContacto {
+  justify-self: center;
+  align-self: center;
+  grid-area: DatosDeContacto;
+}
+footer .footerCompleto .DatosDeContacto ul {
+  list-style: none;
+  text-align: center;
+}
+
 h1 {
   color: white;
   font-family: "Times New Roman", serif;
@@ -355,47 +541,6 @@ label {
   font-size: 1.4rem;
   font-family: "Times New Roman", serif;
   color: #0cb7f2;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #1768ac;
-  height: 100%;
-}
-
-footer .footerCompleto {
-  font-family: "Times New Roman", serif;
-  font-size: 1.7rem;
-  color: black;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
-  grid-template-rows: 1fr;
-  justify-self: center;
-  align-self: center;
-  grid-template-areas: ". indice . contacto .";
-  background-color: #0cb7f2;
-}
-footer .footerCompleto .IndiceFooter {
-  grid-area: indice;
-}
-footer .footerCompleto .IndiceFooter nav ul {
-  list-style: none;
-  text-align: center;
-}
-footer .footerCompleto .IndiceFooter nav ul a {
-  color: black;
-  text-decoration: none;
-}
-footer .footerCompleto .DatosDeContacto {
-  grid-area: contacto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

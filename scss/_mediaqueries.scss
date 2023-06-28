@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px){
+    .ImagenDeFondoIndex{
+        .quienesSomos{
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .detalleIndex{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "mision"
+            "vision"
+            "valores";
+            .mision{
+                grid-template-rows: repeat(2, 1fr);
+            }
+            .vision{
+                grid-template-rows: repeat(2, 1fr);
+            }
+            .valores{
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px){
+    footer .footerCompleto {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "IndiceFooter"
+        "DatosDeContacto";
+        .IndiceFooter{
+            grid-area: IndiceFooter;
+        }
+        .DatosDeContacto{
+            grid-area: DatosDeContacto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ImagenDeFondoServicios {
+    display: block;
+    height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImagenDeFondoEquipo .Administradores,
+    .ImagenDeFondoEquipo .Abogada,
+    .ImagenDeFondoEquipo .Proveedores {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    }
+
+    .ImagenDeFondoEquipo .administradores-divs,
+    .ImagenDeFondoEquipo .abogada-div,
+    .ImagenDeFondoEquipo .proveedores-divs {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImagenDeFondoConsorcios .foto,
+    .ImagenDeFondoConsorcios .listaConsorcios,
+    .ImagenDeFondoConsorcios .mapa {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    }
+
+    .ImagenDeFondoEquipo .listaConsorcios-lista {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #Equipo .container-fluid {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImagenDeFondoContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "formulario-h3"
+        "datos"
+        "consulta"
+        "botones";
+    }
+}
