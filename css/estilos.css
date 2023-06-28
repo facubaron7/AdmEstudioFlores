@@ -1,37 +1,24 @@
 #Inicio {
-  background-color: #1768ac;
+  background-color: #0cb7f2;
 }
-#Inicio div h1 {
+#Inicio .Indice h1 {
   font-family: "Times New Roman", serif;
   color: white;
 }
-#Inicio div .bg-custom-color {
+#Inicio .Indice .bg-custom-color {
   background-color: #0cb7f2;
 }
-#Inicio div .bg-custom-color div .Indice .navbar-nav {
+#Inicio .Indice .bg-custom-color div div .navbar-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 0;
 }
-#Inicio div .bg-custom-color div .Indice .navbar-nav .nav-link {
+#Inicio .Indice .bg-custom-color div div .navbar-nav .nav-link {
   color: black;
   font-family: "Times New Roman", serif;
   font-size: 2rem;
-}
-
-.mainIndex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainIndex h2 {
-  text-align: center;
-  color: white;
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Times New Roman", serif;
 }
 
 .ImagenDeFondoIndex {
@@ -61,23 +48,389 @@
   padding: 10px;
 }
 
-.footer .footerCompleto {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.7rem;
-  color: black;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
-  grid-template-rows: 1fr;
-  justify-self: center;
-  align-self: center;
-  grid-template-areas: ". indice . contacto .";
+#Servicios {
   background-color: #0cb7f2;
 }
-.footer .footerCompleto .IndiceFooter {
-  grid-area: indice;
+#Servicios .Indice .bg-custom-color {
+  background-color: #0cb7f2;
 }
-.footer .footerCompleto .DatosDeContacto {
-  grid-area: contacto;
+#Servicios .Indice .bg-custom-color div div .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#Servicios .Indice .bg-custom-color div div .navbar-nav .nav-link {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.ImagenDeFondoServicios {
+  background-image: url("../images/ImagenCabaHP3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: inherit;
+  gap: 20px;
+  align-items: center;
+  height: 50vh;
+}
+.ImagenDeFondoServicios .ServiciosAdministracion h3 {
+  text-align: center;
+}
+.ImagenDeFondoServicios .ServiciosAdministracion p {
+  text-align: center;
+}
+.ImagenDeFondoServicios .ServiciosAbogado h3 {
+  text-align: center;
+}
+.ImagenDeFondoServicios .ServiciosAbogado p {
+  text-align: center;
+}
+
+#Equipo {
+  background-color: #0cb7f2;
+}
+#Equipo .Indice .bg-custom-color {
+  background-color: #0cb7f2;
+}
+#Equipo .Indice .bg-custom-color div div .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#Equipo .Indice .bg-custom-color div div .navbar-nav .nav-link {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.ImagenDeFondoEquipo {
+  background-image: url("../images/ImagenCabaHP3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Administradores" "Abogada" "Proveedores";
+}
+.ImagenDeFondoEquipo .Administradores {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "administradoresh3" "administradores-divs";
+  grid-area: Administradores;
+}
+.ImagenDeFondoEquipo .Administradores .administradores-h3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: administradoresh3;
+}
+.ImagenDeFondoEquipo .Administradores .administradores-divs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-areas: "emilio maria";
+  grid-area: administradores-divs;
+}
+.ImagenDeFondoEquipo .Administradores .administradores-divs .emilio {
+  justify-self: center;
+  align-self: center;
+  grid-area: emilio;
+}
+.ImagenDeFondoEquipo .Administradores .administradores-divs .maria {
+  justify-self: center;
+  align-self: center;
+  grid-area: maria;
+}
+.ImagenDeFondoEquipo .Abogada {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "abogada-h3" "abogada-div";
+  grid-area: Abogada;
+}
+.ImagenDeFondoEquipo .Abogada .abogada-h3 {
+  grid-area: abogada-h3;
+  justify-self: center;
+  align-self: center;
+}
+.ImagenDeFondoEquipo .Abogada .abogada-div {
+  justify-self: center;
+  align-self: center;
+  grid-area: abogada-div;
+}
+.ImagenDeFondoEquipo .Proveedores {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "proveedores-h4" "proveedores-divs";
+  grid-area: Proveedores;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-h4 {
+  grid-area: proveedores-h4;
+  justify-self: center;
+  align-self: center;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-divs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: space-evenly;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "lomar ascensor plomero electricista";
+  grid-area: proveedores-divs;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-divs .lomar {
+  grid-area: lomar;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-divs .ascensor {
+  grid-area: ascensor;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-divs .plomero {
+  grid-area: plomero;
+}
+.ImagenDeFondoEquipo .Proveedores .proveedores-divs .electricista {
+  grid-area: electricista;
+}
+
+.ImagenDeFondoEquipo ul {
+  list-style: none;
+  text-align: justify;
+}
+.ImagenDeFondoEquipo ul li {
+  color: #0cb7f2;
+  font-family: "Times New Roman", serif;
+  font-size: 1.4rem;
+}
+
+#ConsorciosAdministrados {
+  background-color: #0cb7f2;
+}
+#ConsorciosAdministrados .Indice .bg-custom-color {
+  background-color: #0cb7f2;
+}
+#ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav .nav-link {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.ImagenDeFondoConsorcios {
+  display: grid;
+  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "foto mapa listaConsorcios";
+  background-image: url("../images/ImagenCabaHP3.jpg");
+}
+.ImagenDeFondoConsorcios .foto {
+  grid-area: foto;
+  background-color: black;
+}
+.ImagenDeFondoConsorcios .mapa {
+  justify-self: center;
+  align-self: center;
+  grid-area: mapa;
+}
+.ImagenDeFondoConsorcios .listaConsorcios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "listaConsorcios-h4" "listaConsorcios-lista";
+  grid-area: listaConsorcios;
+}
+.ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-h4 {
+  align-self: center;
+  grid-area: listaConsorcios-h4;
+}
+.ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-lista ul {
+  justify-self: center;
+  align-self: center;
+  grid-area: listaConsorcios-lista;
+  list-style-type: none;
+  font-family: "Times New Roman", serif;
+  font-size: 1.4rem;
+  color: #0cb7f2;
+  text-align: initial;
+}
+
+#Contacto {
+  background-color: #0cb7f2;
+}
+#Contacto .Indice .bg-custom-color {
+  background-color: #0cb7f2;
+}
+#Contacto .Indice .bg-custom-color div div .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#Contacto .Indice .bg-custom-color div div .navbar-nav .nav-link {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.ImagenDeFondoContacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 2.2fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "formulario-h3 formulario-h3" "datos consulta" "botones botones";
+  background-image: url("../images/ImagenCabaHP3.jpg");
+}
+.ImagenDeFondoContacto .formulario-h3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: formulario-h3;
+}
+.ImagenDeFondoContacto .datos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-content: space-evenly;
+  grid-template-areas: "nombre" "apellido" "telefono" "mail";
+  grid-area: datos;
+  justify-items: center;
+  grid-area: datos;
+}
+.ImagenDeFondoContacto .nombre {
+  grid-area: nombre;
+}
+.ImagenDeFondoContacto .apellido {
+  grid-area: apellido;
+}
+.ImagenDeFondoContacto .telefono {
+  grid-area: telefono;
+}
+.ImagenDeFondoContacto .mail {
+  grid-area: mail;
+}
+.ImagenDeFondoContacto .consulta {
+  grid-area: consulta;
+}
+.ImagenDeFondoContacto .consulta #exampleFormControlTextarea1 {
+  height: 30rem;
+}
+.ImagenDeFondoContacto .botones {
+  justify-self: center;
+  align-self: center;
+  grid-area: botones;
+}
+
+h1 {
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 5.5rem;
+  font-weight: bolder;
+  font-style: none;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Times New Roman", serif;
+}
+
+h3 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Times New Roman", serif;
+}
+
+h4 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  color: #0cb7f2;
+  font-size: 1.4rem;
+  font-family: "Times New Roman", serif;
+}
+
+header {
+  height: 25%;
+}
+
+main {
+  height: 15%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 35%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  height: 25%;
+}
+
+legend {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", serif;
+}
+
+label {
+  font-size: 1.4rem;
+  font-family: "Times New Roman", serif;
+  color: #0cb7f2;
 }
 
 * {
@@ -92,6 +445,33 @@ html {
 body {
   background-color: #1768ac;
   height: 100%;
+}
+
+footer .footerCompleto {
+  font-family: "Times New Roman", serif;
+  font-size: 1.7rem;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
+  align-self: center;
+  grid-template-areas: ". indice . contacto .";
+  background-color: #0cb7f2;
+}
+footer .footerCompleto .IndiceFooter {
+  grid-area: indice;
+}
+footer .footerCompleto .IndiceFooter nav ul {
+  list-style: none;
+  text-align: center;
+}
+footer .footerCompleto .IndiceFooter nav ul a {
+  color: black;
+  text-decoration: none;
+}
+footer .footerCompleto .DatosDeContacto {
+  grid-area: contacto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,13 +1,13 @@
 #Inicio {
-    background-color: $colordefondo;
-    div {
-    h1 {
+    background-color: $colordefuente;
+    .Indice {
+        h1 {
         font-family: $fuenteprincipal;
         color: $colordetitulos;
-    }
+        }
         .bg-custom-color {
             background-color: $colordefuente;
-            div .Indice .navbar-nav {
+            div div .navbar-nav {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -22,20 +22,8 @@
         }
     }
 }
-.mainIndex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h2 {
-        text-align: center;
-        color: $colordetitulos;
-        text-align: center;
-        font-size: 4rem;
-        font-family: $fuenteprincipal;
-    }
-}
 .ImagenDeFondoIndex {
-    background-image: url("../images/ImagenCabaHP3.jpg");
+    background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
     font-family: $fuenteprincipal;
@@ -57,27 +45,6 @@
             flex-basis: calc(33.33% - 10px);
             margin: 5px;
             padding: 10px;
-        }
-    }
-}
-.footer {
-    .footerCompleto {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 1.7rem;
-        color: black;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
-        grid-template-rows: 1fr;
-        justify-self: center;
-        align-self: center;
-        grid-template-areas: 
-        ". indice . contacto .";
-        background-color: #0cb7f2;
-        .IndiceFooter {
-            grid-area: indice;
-        }
-        .DatosDeContacto {
-            grid-area: contacto;
         }
     }
 }

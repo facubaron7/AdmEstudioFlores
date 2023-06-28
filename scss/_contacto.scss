@@ -1,0 +1,75 @@
+#Contacto {
+    background-color: $colordefuente;
+    .Indice {
+        .bg-custom-color {
+            background-color: $colordefuente;
+            div div .navbar-nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                .nav-link {
+                    color: black;
+                    font-family: $fuenteprincipal;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+.ImagenDeFondoContacto { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2.2fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "formulario-h3 formulario-h3"
+    "datos consulta"
+    "botones botones";
+    background-image: $imagendefondo;
+    .formulario-h3 {
+        justify-self: center;
+        align-self: center;
+        grid-area: formulario-h3;
+    }
+    .datos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        align-content: space-evenly;
+        grid-template-areas:
+        "nombre"
+        "apellido"
+        "telefono"
+        "mail";
+        grid-area: datos;
+        justify-items: center; 
+        grid-area: datos; 
+    }.nombre {
+        grid-area: nombre;
+    }
+    .apellido {
+        grid-area: apellido;
+    }
+    .telefono {
+        grid-area: telefono;
+    }
+    .mail {
+        grid-area: mail;
+    }
+    .consulta {
+        grid-area: consulta;
+        #exampleFormControlTextarea1 {
+            height: 30rem;
+        }
+    }
+    .botones {
+        justify-self: center;
+        align-self: center;
+        grid-area: botones;
+    }
+}

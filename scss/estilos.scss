@@ -1,9 +1,10 @@
 @import "variables";
 @import "index";
 @import "servicios";
-@import "nosotros";
+@import "equipo";
 @import "consorcios";
 @import "contacto";
+@import "selectoressolos";
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +12,34 @@
 html {
     font-size: 62.5%;
 }
-
 body {
 background-color: $colordefondo;
 height: 100%;
 }
+footer .footerCompleto {
+        font-family: $fuenteprincipal;
+        font-size: 1.7rem;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        justify-self: center;
+        align-self: center;
+        grid-template-areas: 
+        ". indice . contacto .";
+        background-color: $colordefuente;
+        .IndiceFooter {
+            grid-area: indice;
+            nav ul {
+                list-style: none;
+                text-align: center;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+        .DatosDeContacto {
+            grid-area: contacto;
+        }
+    }

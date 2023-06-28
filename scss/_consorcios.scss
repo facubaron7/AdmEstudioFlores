@@ -1,0 +1,66 @@
+#ConsorciosAdministrados {
+    background-color: $colordefuente;
+    .Indice {
+        .bg-custom-color {
+            background-color: $colordefuente;
+            div div .navbar-nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                .nav-link {
+                    color: black;
+                    font-family: $fuenteprincipal;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+.ImagenDeFondoConsorcios {
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "foto mapa listaConsorcios";
+    background-image: $imagendefondo;
+    .foto { 
+        grid-area: foto;
+        background-color: black;
+    }
+    .mapa {
+        justify-self: center;
+        align-self: center;
+        grid-area: mapa;
+    }
+    .listaConsorcios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "listaConsorcios-h4"
+        "listaConsorcios-lista";
+        grid-area: listaConsorcios;
+        .listaConsorcios-h4 {
+            align-self: center;
+            grid-area: listaConsorcios-h4;
+        }
+        .listaConsorcios-lista ul {
+            justify-self: center;
+            align-self: center;
+            grid-area: listaConsorcios-lista;
+            list-style-type: none;
+            font-family: $fuenteprincipal;
+            font-size: 1.4rem;
+            color: $colordefuente;
+            text-align: initial;
+        }
+    }
+}
