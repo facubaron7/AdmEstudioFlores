@@ -1,21 +1,21 @@
-#Inicio {
+#Inicio, #Contacto, #ConsorciosAdministrados, #Equipo, #Servicios {
   background-color: #0cb7f2;
 }
-#Inicio .Indice h1 {
+#Inicio .Indice h1, #Contacto .Indice h1, #ConsorciosAdministrados .Indice h1, #Equipo .Indice h1, #Servicios .Indice h1 {
   font-family: "Times New Roman", serif;
   color: white;
 }
-#Inicio .Indice .bg-custom-color {
+#Inicio .Indice .bg-custom-color, #Contacto .Indice .bg-custom-color, #ConsorciosAdministrados .Indice .bg-custom-color, #Equipo .Indice .bg-custom-color, #Servicios .Indice .bg-custom-color {
   background-color: #0cb7f2;
 }
-#Inicio .Indice .bg-custom-color div div .navbar-nav {
+#Inicio .Indice .bg-custom-color div div .navbar-nav, #Contacto .Indice .bg-custom-color div div .navbar-nav, #ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav, #Equipo .Indice .bg-custom-color div div .navbar-nav, #Servicios .Indice .bg-custom-color div div .navbar-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 0;
 }
-#Inicio .Indice .bg-custom-color div div .navbar-nav .nav-link {
+#Inicio .Indice .bg-custom-color div div .navbar-nav .nav-link, #Contacto .Indice .bg-custom-color div div .navbar-nav .nav-link, #ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav .nav-link, #Equipo .Indice .bg-custom-color div div .navbar-nav .nav-link, #Servicios .Indice .bg-custom-color div div .navbar-nav .nav-link {
   color: black;
   font-family: "Times New Roman", serif;
   font-size: 2rem;
@@ -48,25 +48,6 @@
   padding: 10px;
 }
 
-#Servicios {
-  background-color: #0cb7f2;
-}
-#Servicios .Indice .bg-custom-color {
-  background-color: #0cb7f2;
-}
-#Servicios .Indice .bg-custom-color div div .navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-#Servicios .Indice .bg-custom-color div div .navbar-nav .nav-link {
-  color: black;
-  font-family: "Times New Roman", serif;
-  font-size: 2rem;
-}
-
 .ImagenDeFondoServicios {
   background-image: url("../images/ImagenCabaHP3.jpg");
   background-size: cover;
@@ -89,25 +70,6 @@
 }
 .ImagenDeFondoServicios .ServiciosAbogado p {
   text-align: center;
-}
-
-#Equipo {
-  background-color: #0cb7f2;
-}
-#Equipo .Indice .bg-custom-color {
-  background-color: #0cb7f2;
-}
-#Equipo .Indice .bg-custom-color div div .navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-#Equipo .Indice .bg-custom-color div div .navbar-nav .nav-link {
-  color: black;
-  font-family: "Times New Roman", serif;
-  font-size: 2rem;
 }
 
 .ImagenDeFondoEquipo {
@@ -230,25 +192,6 @@
   font-size: 1.4rem;
 }
 
-#ConsorciosAdministrados {
-  background-color: #0cb7f2;
-}
-#ConsorciosAdministrados .Indice .bg-custom-color {
-  background-color: #0cb7f2;
-}
-#ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-#ConsorciosAdministrados .Indice .bg-custom-color div div .navbar-nav .nav-link {
-  color: black;
-  font-family: "Times New Roman", serif;
-  font-size: 2rem;
-}
-
 .ImagenDeFondoConsorcios {
   display: grid;
   grid-template-columns: 0.7fr 1.6fr 0.7fr;
@@ -291,25 +234,6 @@
   font-size: 1.4rem;
   color: #0cb7f2;
   text-align: initial;
-}
-
-#Contacto {
-  background-color: #0cb7f2;
-}
-#Contacto .Indice .bg-custom-color {
-  background-color: #0cb7f2;
-}
-#Contacto .Indice .bg-custom-color div div .navbar-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-#Contacto .Indice .bg-custom-color div div .navbar-nav .nav-link {
-  color: black;
-  font-family: "Times New Roman", serif;
-  font-size: 2rem;
 }
 
 .ImagenDeFondoContacto {

@@ -1,22 +1,5 @@
 #Contacto {
-    background-color: $colordefuente;
-    .Indice {
-        .bg-custom-color {
-            background-color: $colordefuente;
-            div div .navbar-nav {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                width: 100%;
-                padding: 0;
-                .nav-link {
-                    color: black;
-                    font-family: $fuenteprincipal;
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
+    @extend #Inicio
 }
 .ImagenDeFondoContacto { 
     display: grid;

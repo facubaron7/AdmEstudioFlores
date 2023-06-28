@@ -1,22 +1,5 @@
 #ConsorciosAdministrados {
-    background-color: $colordefuente;
-    .Indice {
-        .bg-custom-color {
-            background-color: $colordefuente;
-            div div .navbar-nav {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                width: 100%;
-                padding: 0;
-                .nav-link {
-                    color: black;
-                    font-family: $fuenteprincipal;
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
+    @extend #Inicio
 }
 .ImagenDeFondoConsorcios {
     display: grid;
@@ -58,7 +41,7 @@
             grid-area: listaConsorcios-lista;
             list-style-type: none;
             font-family: $fuenteprincipal;
-            font-size: 1.4rem;
+            font-size: $tamanodetexto;
             color: $colordefuente;
             text-align: initial;
         }
