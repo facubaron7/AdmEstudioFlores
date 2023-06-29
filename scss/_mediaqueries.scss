@@ -104,29 +104,5 @@
         "datos"
         "consulta"
         "botones";
-        .formulario-h3 { 
-            grid-area: formulario-h3; 
-        }
-        .datos{
-            grid-area: datos;
-            .nombre{
-                grid-area: nombre;
-            }
-            .apellido{
-                grid-area: apellido;
-            }
-            .telefono{
-                grid-area: telefono;
-            }
-            .mail{
-                grid-area: mail;
-            }
-        }
-        .consulta{
-            grid-area: consulta;
-        }
-        .botones{
-            grid-area: botones;
-        }
     }
 }

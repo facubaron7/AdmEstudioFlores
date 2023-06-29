@@ -574,30 +574,6 @@ label {
     grid-template-rows: 0.5fr repeat(2, 1.5fr) 0.5fr;
     grid-template-areas: "formulario-h3" "datos" "consulta" "botones";
   }
-  .ImagenDeFondoContacto .formulario-h3 {
-    grid-area: formulario-h3;
-  }
-  .ImagenDeFondoContacto .datos {
-    grid-area: datos;
-  }
-  .ImagenDeFondoContacto .datos .nombre {
-    grid-area: nombre;
-  }
-  .ImagenDeFondoContacto .datos .apellido {
-    grid-area: apellido;
-  }
-  .ImagenDeFondoContacto .datos .telefono {
-    grid-area: telefono;
-  }
-  .ImagenDeFondoContacto .datos .mail {
-    grid-area: mail;
-  }
-  .ImagenDeFondoContacto .consulta {
-    grid-area: consulta;
-  }
-  .ImagenDeFondoContacto .botones {
-    grid-area: botones;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
