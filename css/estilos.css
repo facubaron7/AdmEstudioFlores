@@ -4,7 +4,7 @@
 }
 #Inicio .Indice h1, #Contacto .Indice h1, #ConsorciosAdministrados .Indice h1, #Equipo .Indice h1, #Servicios .Indice h1 {
   font-family: "Times New Roman", serif;
-  color: white;
+  color: black;
 }
 #Inicio .Indice .bg-custom-color, #Contacto .Indice .bg-custom-color, #ConsorciosAdministrados .Indice .bg-custom-color, #Equipo .Indice .bg-custom-color, #Servicios .Indice .bg-custom-color {
   background-color: #0cb7f2;
@@ -329,15 +329,16 @@
 }
 
 .ImagenDeFondoContacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "formulario-h3" "datos";
   background-image: url("../images/ImagenCabaHP3.jpg");
   background-size: cover;
   background-position: center;
+  font-family: "Times New Roman", serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "formulario-h3 formulario-h3" "datos consulta" "botones botones";
 }
 .ImagenDeFondoContacto .formulario-h3 {
   justify-self: center;
@@ -345,40 +346,32 @@
   grid-area: formulario-h3;
 }
 .ImagenDeFondoContacto .datos {
+  margin: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "nombre consulta" "apellido consulta" "telefono consulta" "mail consulta" "botones botones";
+  grid-template-areas: "nombre" "apellido" "telefono" "mail";
   grid-area: datos;
 }
-.ImagenDeFondoContacto .nombre {
-  justify-self: center;
-  align-self: center;
+.ImagenDeFondoContacto .datos .nombre {
   grid-area: nombre;
 }
-.ImagenDeFondoContacto .apellido {
-  justify-self: center;
-  align-self: center;
+.ImagenDeFondoContacto .datos .apellido {
   grid-area: apellido;
 }
-.ImagenDeFondoContacto .telefono {
-  justify-self: center;
-  align-self: center;
+.ImagenDeFondoContacto .datos .telefono {
   grid-area: telefono;
 }
-.ImagenDeFondoContacto .mail {
-  justify-self: center;
-  align-self: center;
+.ImagenDeFondoContacto .datos .mail {
   grid-area: mail;
 }
 .ImagenDeFondoContacto .consulta {
-  justify-self: center;
-  align-self: center;
+  margin: 2rem;
   grid-area: consulta;
 }
-.ImagenDeFondoContacto .consulta label textarea {
+.ImagenDeFondoContacto .consulta textarea {
   height: 30rem;
 }
 .ImagenDeFondoContacto .botones {
@@ -387,16 +380,137 @@
   grid-area: botones;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1768ac;
+  height: 100%;
+}
+
+footer .footerCompleto {
+  font-family: "Times New Roman", serif;
+  background-color: #0cb7f2;
+  font-size: 1.7rem;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "IndiceFooter DatosDeContacto";
+}
+footer .footerCompleto .IndiceFooter {
+  justify-self: center;
+  align-self: center;
+  grid-area: IndiceFooter;
+}
+footer .footerCompleto .IndiceFooter nav ul {
+  list-style: none;
+  text-align: center;
+}
+footer .footerCompleto .IndiceFooter nav ul a {
+  color: black;
+  text-decoration: none;
+}
+footer .footerCompleto .DatosDeContacto {
+  justify-self: center;
+  align-self: center;
+  grid-area: DatosDeContacto;
+}
+footer .footerCompleto .DatosDeContacto ul {
+  list-style: none;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 5.5rem;
+  font-weight: bolder;
+  font-style: none;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Times New Roman", serif;
+}
+
+h3 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Times New Roman", serif;
+}
+
+h4 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  color: #0cb7f2;
+  font-size: 1.4rem;
+  font-family: "Times New Roman", serif;
+}
+
+header {
+  height: 25%;
+}
+
+main {
+  height: 15%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 35%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  height: 25%;
+}
+
+legend {
+  color: #0cb7f2;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", serif;
+}
+
+label {
+  font-size: 1.4rem;
+  font-family: "Times New Roman", serif;
+  color: #0cb7f2;
+}
+
 @media screen and (max-width: 768px) {
-  footer {
+  footer .footerCompleto {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "IndiceFooter" "DatosDeContacto";
   }
-  footer .IndiceFooter {
+  footer .footerCompleto .IndiceFooter {
     grid-area: IndiceFooter;
   }
-  footer .DatosDeContacto {
+  footer .footerCompleto .DatosDeContacto {
     grid-area: DatosDeContacto;
   }
 }
@@ -457,128 +571,33 @@
 @media screen and (max-width: 768px) {
   .ImagenDeFondoContacto {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "nombre" "apellido" "telefono" "mail" "consulta" "botones";
+    grid-template-rows: 0.5fr repeat(2, 1.5fr) 0.5fr;
+    grid-template-areas: "formulario-h3" "datos" "consulta" "botones";
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #1768ac;
-  height: 100%;
-}
-
-footer .footerCompleto {
-  font-family: "Times New Roman", serif;
-  background-color: #0cb7f2;
-  font-size: 1.7rem;
-  color: black;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "IndiceFooter DatosDeContacto";
-}
-footer .footerCompleto .IndiceFooter {
-  justify-self: center;
-  align-self: center;
-  grid-area: IndiceFooter;
-}
-footer .footerCompleto .IndiceFooter nav ul {
-  list-style: none;
-  text-align: center;
-}
-footer .footerCompleto .IndiceFooter nav ul a {
-  color: black;
-  text-decoration: none;
-}
-footer .footerCompleto .DatosDeContacto {
-  justify-self: center;
-  align-self: center;
-  grid-area: DatosDeContacto;
-}
-footer .footerCompleto .DatosDeContacto ul {
-  list-style: none;
-  text-align: center;
-}
-
-h1 {
-  color: white;
-  font-family: "Times New Roman", serif;
-  font-size: 5.5rem;
-  font-weight: bolder;
-  font-style: none;
-  text-align: center;
-}
-
-h2 {
-  color: white;
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Times New Roman", serif;
-}
-
-h3 {
-  color: white;
-  font-size: 3.5rem;
-  font-family: "Times New Roman", serif;
-}
-
-h4 {
-  color: white;
-  font-size: 2.5rem;
-  font-family: "Times New Roman", serif;
-}
-
-p {
-  color: #0cb7f2;
-  font-size: 1.4rem;
-  font-family: "Times New Roman", serif;
-}
-
-header {
-  height: 25%;
-}
-
-main {
-  height: 15%;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-section {
-  height: 35%;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-footer {
-  height: 25%;
-}
-
-legend {
-  color: white;
-  font-size: 1.8rem;
-  font-family: "Times New Roman", serif;
-}
-
-label {
-  font-size: 1.4rem;
-  font-family: "Times New Roman", serif;
-  color: #0cb7f2;
+  .ImagenDeFondoContacto .formulario-h3 {
+    grid-area: formulario-h3;
+  }
+  .ImagenDeFondoContacto .datos {
+    grid-area: datos;
+  }
+  .ImagenDeFondoContacto .datos .nombre {
+    grid-area: nombre;
+  }
+  .ImagenDeFondoContacto .datos .apellido {
+    grid-area: apellido;
+  }
+  .ImagenDeFondoContacto .datos .telefono {
+    grid-area: telefono;
+  }
+  .ImagenDeFondoContacto .datos .mail {
+    grid-area: mail;
+  }
+  .ImagenDeFondoContacto .consulta {
+    grid-area: consulta;
+  }
+  .ImagenDeFondoContacto .botones {
+    grid-area: botones;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

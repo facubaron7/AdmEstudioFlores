@@ -4,7 +4,7 @@
 @import "equipo";
 @import "consorcios";
 @import "contacto";
-@import "mediaqueries";
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ footer .footerCompleto {
 }
 
 h1 {
-    color: $colordetitulos;
+    color: black;
     font-family: $fuenteprincipal;
     font-size: 5.5rem;
     font-weight: bolder;
@@ -109,7 +109,7 @@ footer {
 }
 
 legend {
-    color: $colordetitulos;
+    color: $colordefuente;
     font-size: 1.8rem;
     font-family: $fuenteprincipal;
 }
@@ -118,3 +118,4 @@ label {
     font-family: $fuenteprincipal;
     color: $colordefuente;
 }
+@import "mediaqueries";

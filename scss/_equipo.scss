@@ -94,7 +94,8 @@
             align-self: center;
             grid-area: proveedores-h4;
         }
-        .proveedores-divs {  display: grid;
+        .proveedores-divs {  
+            display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
             gap: 0px 0px;

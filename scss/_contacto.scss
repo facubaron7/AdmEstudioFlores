@@ -2,65 +2,61 @@
     @extend #Inicio
 }
 
-@mixin self-self {
-    justify-self: center;
-    align-self: center;
-}
-
 .ImagenDeFondoContacto { 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "formulario-h3"
-    "datos";
     background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
+    font-family: $fuenteprincipal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "formulario-h3 formulario-h3"
+    "datos consulta"
+    "botones botones";
     .formulario-h3 {
-        @include self-self;
+        justify-self: center;
+        align-self: center;
         grid-area: formulario-h3;
     }
-    .datos {
+    .datos {  
+        margin: 2rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-        "nombre consulta"
-        "apellido consulta"
-        "telefono consulta"
-        "mail consulta"
-        "botones botones";
+        "nombre"
+        "apellido"
+        "telefono"
+        "mail";
         grid-area: datos;
-    }.nombre {
-        @include self-self;
-        grid-area: nombre;
+        .nombre { 
+            grid-area: nombre; 
+        }
+        .apellido { 
+            grid-area: apellido; 
+        }
+        .telefono { 
+            grid-area: telefono; 
+        }
+        .mail { 
+            grid-area: mail; 
+        }
     }
-    .apellido {
-        @include self-self;
-        grid-area: apellido;
-    }
-    .telefono {
-        @include self-self;
-        grid-area: telefono;
-    }
-    .mail {
-        @include self-self;
-        grid-area: mail;
-    }
-    .consulta {    
-        @include self-self;
+    .consulta {
+        margin: 2rem;
         grid-area: consulta;
-        label textarea {
+        textarea {
             height: 30rem;
         }
     }
     .botones {
-        @include self-self;
+        justify-self: center;
+        align-self: center;
         grid-area: botones;
     }
 }
