@@ -57,40 +57,52 @@
 
 @media screen and (max-width: 768px){
     .ImagenDeFondoEquipo{
-        
+        .Administradores{
+            .administradores-divs{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                "emilio"
+                "maria";
+            }
+        }
+        .Proveedores{
+            .proveedores-divs{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas:
+                "lomar"
+                "ascensor"
+                "plomero"
+                "electricista";
+            }
+        }
     }
 }
 
-@media (max-width: 768px) {
-    .ImagenDeFondoConsorcios .foto,
-    .ImagenDeFondoConsorcios .listaConsorcios,
-    .ImagenDeFondoConsorcios .mapa {
-    display: inline-block;
-    height: auto;
-    text-align: center;
-    }
-
-    .ImagenDeFondoEquipo .listaConsorcios-lista {
-    display: inline-block;
-    height: auto;
-    text-align: center;
+@media screen and (max-width: 768px){
+    .ImagenDeFondoConsorcios{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "foto"
+        "listaConsorcios"
+        "mapa";
+        .listaConsorcios{
+            grid-template-rows: 0.5fr 1.5fr;
+        }
     }
 }
 
-@media (max-width: 768px) {
-    #Equipo .container-fluid {
-        display: block;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .ImagenDeFondoContacto {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "formulario-h3"
-        "datos"
+@media screen and (max-width: 768px){
+    .ImagenDeFondoContacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "nombre"
+        "apellido"
+        "telefono"
+        "mail"
         "consulta"
         "botones";
     }

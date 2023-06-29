@@ -1,6 +1,10 @@
 #Servicios {
     @extend #Inicio;
 }
+@mixin justifyalign {
+    justify-self: center;
+    align-self: center;
+}
 .ImagenDeFondoServicios {
     background-image: $imagendefondo;
     background-size: cover;
@@ -25,13 +29,11 @@
         "ServiciosAdministracion-texto";
         grid-area: ServiciosAdministracion;
         .ServiciosAdministracion-h3 {
-            justify-self: center;
-            align-self: center;
+            @include justifyalign;
             grid-area: ServiciosAdministracion-h3;
         }
         .ServiciosAdministracion-texto {
-            justify-self: center;
-            align-self: center;
+            @include justifyalign;
             grid-area: ServiciosAdministracion-texto;
         }
     }
@@ -46,13 +48,11 @@
         "ServiciosAbogado-texto";
         grid-area: ServiciosAbogado;
         .ServiciosAbogado-h3 {
-            justify-self: center;
-            align-self: center;
+            @include justifyalign;
             grid-area: ServiciosAbogado-h3;
         }
         .ServiciosAbogado-texto {
-            justify-self: center;
-            align-self: center;
+            @include justifyalign;
             grid-area: ServiciosAbogado-texto;
         }
     }

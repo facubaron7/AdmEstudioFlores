@@ -23,6 +23,15 @@
         }
     }
 }
+
+@mixin mvv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
 .ImagenDeFondoIndex {  
     background-image: $imagendefondo;
     background-size: cover;
@@ -65,11 +74,7 @@
         "mision vision valores";
         grid-area: detalleIndex;
         .mision {  
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.7fr 1.3fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
+            @include mvv;
             grid-template-areas:
             "mision-h3"
             "mision-texto";
@@ -82,11 +87,7 @@
             }
         }
         .vision {  
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.7fr 1.3fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
+            @include mvv;
             grid-template-areas:
             "vision-h3"
             "vision-texto";
@@ -99,11 +100,7 @@
             }
         }
         .valores {  
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.7fr 1.3fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
+            @include mvv;
             grid-template-areas:
             "valores-h3"
             "valores-texto";

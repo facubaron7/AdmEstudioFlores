@@ -1,6 +1,12 @@
 #Equipo {
     @extend #Inicio
 }
+@mixin divproveedores {
+    justify-self: center;
+    align-self: center;
+    grid-area: plomero;
+}
+
 .ImagenDeFondoEquipo {
     background-image: $imagendefondo;
     background-size: cover;
@@ -31,7 +37,8 @@
             align-self: center;
             grid-area: administradores-h3;
         }
-        .administradores-divs {  display: grid;
+        .administradores-divs {  
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             gap: 0px 0px;
@@ -51,7 +58,8 @@
             }
         }
     }
-    .Abogada {  display: grid;
+    .Abogada {  
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.8fr 1.2fr;
         gap: 0px 0px;
@@ -71,7 +79,8 @@
             grid-area: abogada-div;
         }
     }
-    .Proveedores {  display: grid;
+    .Proveedores {  
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.8fr 1.2fr;
         gap: 0px 0px;
@@ -94,23 +103,19 @@
             "lomar ascensor plomero electricista";
             grid-area: proveedores-divs;
             .lomar {
-                justify-self: center;
-                align-self: center;
+                @include divproveedores;
                 grid-area: lomar;
             }
             .ascensor {
-                justify-self: center;
-                align-self: center;
+                @include divproveedores;
                 grid-area: ascensor;
             }
             .plomero {
-                justify-self: center;
-                align-self: center;
+                @include divproveedores;
                 grid-area: plomero;
             }
             .electricista {
-                justify-self: center;
-                align-self: center;
+                @include divproveedores;
                 grid-area: electricista;
             }
         }

@@ -249,21 +249,25 @@
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .lomar {
   justify-self: center;
   align-self: center;
+  grid-area: plomero;
   grid-area: lomar;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .ascensor {
   justify-self: center;
   align-self: center;
+  grid-area: plomero;
   grid-area: ascensor;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .plomero {
   justify-self: center;
   align-self: center;
   grid-area: plomero;
+  grid-area: plomero;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .electricista {
   justify-self: center;
   align-self: center;
+  grid-area: plomero;
   grid-area: electricista;
 }
 
@@ -279,16 +283,16 @@
 
 .ImagenDeFondoConsorcios {
   display: grid;
-  grid-template-columns: 0.7fr 1.6fr 0.7fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  justify-items: center;
-  align-items: center;
   grid-template-areas: "foto mapa listaConsorcios";
   background-image: url("../images/ImagenCabaHP3.jpg");
 }
 .ImagenDeFondoConsorcios .foto {
+  justify-self: center;
+  align-self: center;
   grid-area: foto;
   background-color: black;
 }
@@ -300,20 +304,23 @@
 .ImagenDeFondoConsorcios .listaConsorcios {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 0.7fr 1.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "listaConsorcios-h4" "listaConsorcios-lista";
   grid-area: listaConsorcios;
 }
 .ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-h4 {
+  justify-self: center;
   align-self: center;
   grid-area: listaConsorcios-h4;
 }
-.ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-lista ul {
+.ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-lista {
   justify-self: center;
   align-self: center;
   grid-area: listaConsorcios-lista;
+}
+.ImagenDeFondoConsorcios .listaConsorcios .listaConsorcios-lista ul {
   list-style-type: none;
   font-family: "Times New Roman", serif;
   font-size: 1.4rem;
@@ -323,12 +330,14 @@
 
 .ImagenDeFondoContacto {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr 2.2fr 0.3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "formulario-h3 formulario-h3" "datos consulta" "botones botones";
+  grid-template-areas: "formulario-h3" "datos";
   background-image: url("../images/ImagenCabaHP3.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .ImagenDeFondoContacto .formulario-h3 {
   justify-self: center;
@@ -337,32 +346,39 @@
 }
 .ImagenDeFondoContacto .datos {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   gap: 0px 0px;
   grid-auto-flow: row;
-  align-content: space-evenly;
-  grid-template-areas: "nombre" "apellido" "telefono" "mail";
-  grid-area: datos;
-  justify-items: center;
+  grid-template-areas: "nombre consulta" "apellido consulta" "telefono consulta" "mail consulta" "botones botones";
   grid-area: datos;
 }
 .ImagenDeFondoContacto .nombre {
+  justify-self: center;
+  align-self: center;
   grid-area: nombre;
 }
 .ImagenDeFondoContacto .apellido {
+  justify-self: center;
+  align-self: center;
   grid-area: apellido;
 }
 .ImagenDeFondoContacto .telefono {
+  justify-self: center;
+  align-self: center;
   grid-area: telefono;
 }
 .ImagenDeFondoContacto .mail {
+  justify-self: center;
+  align-self: center;
   grid-area: mail;
 }
 .ImagenDeFondoContacto .consulta {
+  justify-self: center;
+  align-self: center;
   grid-area: consulta;
 }
-.ImagenDeFondoContacto .consulta #exampleFormControlTextarea1 {
+.ImagenDeFondoContacto .consulta label textarea {
   height: 30rem;
 }
 .ImagenDeFondoContacto .botones {
@@ -416,31 +432,33 @@
     grid-area: ServiciosAbogado;
   }
 }
-@media (max-width: 768px) {
-  .ImagenDeFondoConsorcios .foto,
-  .ImagenDeFondoConsorcios .listaConsorcios,
-  .ImagenDeFondoConsorcios .mapa {
-    display: inline-block;
-    height: auto;
-    text-align: center;
+@media screen and (max-width: 768px) {
+  .ImagenDeFondoEquipo .Administradores .administradores-divs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "emilio" "maria";
   }
-  .ImagenDeFondoEquipo .listaConsorcios-lista {
-    display: inline-block;
-    height: auto;
-    text-align: center;
+  .ImagenDeFondoEquipo .Proveedores .proveedores-divs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "lomar" "ascensor" "plomero" "electricista";
   }
 }
-@media (max-width: 768px) {
-  #Equipo .container-fluid {
-    display: block;
-    text-align: center;
+@media screen and (max-width: 768px) {
+  .ImagenDeFondoConsorcios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "foto" "listaConsorcios" "mapa";
+  }
+  .ImagenDeFondoConsorcios .listaConsorcios {
+    grid-template-rows: 0.5fr 1.5fr;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .ImagenDeFondoContacto {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "formulario-h3" "datos" "consulta" "botones";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "nombre" "apellido" "telefono" "mail" "consulta" "botones";
   }
 }
 * {
