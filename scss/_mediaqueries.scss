@@ -1,4 +1,20 @@
 @media screen and (max-width: 768px){
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "IndiceFooter"
+        "DatosDeContacto";
+        .IndiceFooter{
+            grid-area: IndiceFooter;
+        }
+        .DatosDeContacto{
+            grid-area: DatosDeContacto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
     .ImagenDeFondoIndex{
         .quienesSomos{
             grid-template-rows: repeat(2, 1fr);
@@ -23,44 +39,25 @@
     } 
 }
 
-@media screen and (max-width: 768px){
-    footer .footerCompleto {
+@media screen and (max-width: 768px) {
+    .ImagenDeFondoServicios {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "IndiceFooter"
-        "DatosDeContacto";
-        .IndiceFooter{
-            grid-area: IndiceFooter;
+        "ServiciosAdministracion"
+        "ServiciosAbogado";
+        .ServiciosAdministracion{
+            grid-area: ServiciosAdministracion;
         }
-        .DatosDeContacto{
-            grid-area: DatosDeContacto;
+        .ServiciosAbogado{
+            grid-area: ServiciosAbogado;
         }
     }
 }
 
-@media (max-width: 768px) {
-    .ImagenDeFondoServicios {
-    display: block;
-    height: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .ImagenDeFondoEquipo .Administradores,
-    .ImagenDeFondoEquipo .Abogada,
-    .ImagenDeFondoEquipo .Proveedores {
-    display: inline-block;
-    height: auto;
-    text-align: center;
-    }
-
-    .ImagenDeFondoEquipo .administradores-divs,
-    .ImagenDeFondoEquipo .abogada-div,
-    .ImagenDeFondoEquipo .proveedores-divs {
-    display: inline-block;
-    height: auto;
-    text-align: center;
+@media screen and (max-width: 768px){
+    .ImagenDeFondoEquipo{
+        
     }
 }
 

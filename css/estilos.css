@@ -1,5 +1,6 @@
 #Inicio, #Contacto, #ConsorciosAdministrados, #Equipo, #Servicios {
   background-color: #0cb7f2;
+  height: 25%;
 }
 #Inicio .Indice h1, #Contacto .Indice h1, #ConsorciosAdministrados .Indice h1, #Equipo .Indice h1, #Servicios .Indice h1 {
   font-family: "Times New Roman", serif;
@@ -25,6 +26,7 @@
   background-image: url("../images/ImagenCabaHP3.jpg");
   background-size: cover;
   background-position: center;
+  height: 35%;
   font-family: "Times New Roman", serif;
   text-align: center;
   display: grid;
@@ -108,35 +110,63 @@
   background-image: url("../images/ImagenCabaHP3.jpg");
   background-size: cover;
   background-position: center;
+  height: 35%;
+  text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: inherit;
-  gap: 20px;
-  align-items: center;
-  height: 50vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "ServiciosAdministracion ServiciosAbogado";
 }
-.ImagenDeFondoServicios .ServiciosAdministracion h3 {
-  text-align: center;
+.ImagenDeFondoServicios .ServiciosAdministracion {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "ServiciosAdministracion-h3" "ServiciosAdministracion-texto";
+  grid-area: ServiciosAdministracion;
 }
-.ImagenDeFondoServicios .ServiciosAdministracion p {
-  text-align: center;
+.ImagenDeFondoServicios .ServiciosAdministracion .ServiciosAdministracion-h3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: ServiciosAdministracion-h3;
 }
-.ImagenDeFondoServicios .ServiciosAbogado h3 {
-  text-align: center;
+.ImagenDeFondoServicios .ServiciosAdministracion .ServiciosAdministracion-texto {
+  justify-self: center;
+  align-self: center;
+  grid-area: ServiciosAdministracion-texto;
 }
-.ImagenDeFondoServicios .ServiciosAbogado p {
-  text-align: center;
+.ImagenDeFondoServicios .ServiciosAbogado {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "ServiciosAbogado-h3" "ServiciosAbogado-texto";
+  grid-area: ServiciosAbogado;
+}
+.ImagenDeFondoServicios .ServiciosAbogado .ServiciosAbogado-h3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: ServiciosAbogado-h3;
+}
+.ImagenDeFondoServicios .ServiciosAbogado .ServiciosAbogado-texto {
+  justify-self: center;
+  align-self: center;
+  grid-area: ServiciosAbogado-texto;
 }
 
 .ImagenDeFondoEquipo {
   background-image: url("../images/ImagenCabaHP3.jpg");
   background-size: cover;
   background-position: center;
+  font-family: "Times New Roman", serif;
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "Administradores" "Abogada" "Proveedores";
@@ -144,19 +174,16 @@
 .ImagenDeFondoEquipo .Administradores {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-columns: 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas: "administradoresh3" "administradores-divs";
+  grid-template-areas: "administradores-h3" "administradores-divs";
   grid-area: Administradores;
 }
 .ImagenDeFondoEquipo .Administradores .administradores-h3 {
   justify-self: center;
   align-self: center;
-  grid-area: administradoresh3;
+  grid-area: administradores-h3;
 }
 .ImagenDeFondoEquipo .Administradores .administradores-divs {
   display: grid;
@@ -164,8 +191,6 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  justify-content: space-evenly;
-  align-content: center;
   grid-template-areas: "emilio maria";
   grid-area: administradores-divs;
 }
@@ -182,16 +207,16 @@
 .ImagenDeFondoEquipo .Abogada {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 0.8fr 1.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "abogada-h3" "abogada-div";
   grid-area: Abogada;
 }
 .ImagenDeFondoEquipo .Abogada .abogada-h3 {
-  grid-area: abogada-h3;
   justify-self: center;
   align-self: center;
+  grid-area: abogada-h3;
 }
 .ImagenDeFondoEquipo .Abogada .abogada-div {
   justify-self: center;
@@ -201,16 +226,16 @@
 .ImagenDeFondoEquipo .Proveedores {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 0.8fr 1.2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "proveedores-h4" "proveedores-divs";
   grid-area: Proveedores;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-h4 {
-  grid-area: proveedores-h4;
   justify-self: center;
   align-self: center;
+  grid-area: proveedores-h4;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs {
   display: grid;
@@ -218,23 +243,27 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  justify-content: space-evenly;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
   grid-template-areas: "lomar ascensor plomero electricista";
   grid-area: proveedores-divs;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .lomar {
+  justify-self: center;
+  align-self: center;
   grid-area: lomar;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .ascensor {
+  justify-self: center;
+  align-self: center;
   grid-area: ascensor;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .plomero {
+  justify-self: center;
+  align-self: center;
   grid-area: plomero;
 }
 .ImagenDeFondoEquipo .Proveedores .proveedores-divs .electricista {
+  justify-self: center;
+  align-self: center;
   grid-area: electricista;
 }
 
@@ -343,6 +372,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "IndiceFooter" "DatosDeContacto";
+  }
+  footer .IndiceFooter {
+    grid-area: IndiceFooter;
+  }
+  footer .DatosDeContacto {
+    grid-area: DatosDeContacto;
+  }
+}
+@media screen and (max-width: 768px) {
   .ImagenDeFondoIndex .quienesSomos {
     grid-template-rows: repeat(2, 1fr);
   }
@@ -362,38 +404,16 @@
   }
 }
 @media screen and (max-width: 768px) {
-  footer .footerCompleto {
+  .ImagenDeFondoServicios {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "IndiceFooter" "DatosDeContacto";
+    grid-template-areas: "ServiciosAdministracion" "ServiciosAbogado";
   }
-  footer .footerCompleto .IndiceFooter {
-    grid-area: IndiceFooter;
+  .ImagenDeFondoServicios .ServiciosAdministracion {
+    grid-area: ServiciosAdministracion;
   }
-  footer .footerCompleto .DatosDeContacto {
-    grid-area: DatosDeContacto;
-  }
-}
-@media (max-width: 768px) {
-  .ImagenDeFondoServicios {
-    display: block;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .ImagenDeFondoEquipo .Administradores,
-  .ImagenDeFondoEquipo .Abogada,
-  .ImagenDeFondoEquipo .Proveedores {
-    display: inline-block;
-    height: auto;
-    text-align: center;
-  }
-  .ImagenDeFondoEquipo .administradores-divs,
-  .ImagenDeFondoEquipo .abogada-div,
-  .ImagenDeFondoEquipo .proveedores-divs {
-    display: inline-block;
-    height: auto;
-    text-align: center;
+  .ImagenDeFondoServicios .ServiciosAbogado {
+    grid-area: ServiciosAbogado;
   }
 }
 @media (max-width: 768px) {

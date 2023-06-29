@@ -5,43 +5,37 @@
     background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
+    font-family: $fuenteprincipal;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
     "Administradores"
     "Abogada"
     "Proveedores";
-    .Administradores {
+    .Administradores {  
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-auto-columns: 1fr;
+        grid-template-rows: 0.8fr 1.2fr;
         gap: 0px 0px;
         grid-auto-flow: row;
-        justify-items: center;
-        align-items: center;
         grid-template-areas:
-        "administradoresh3"
+        "administradores-h3"
         "administradores-divs";
         grid-area: Administradores;
         .administradores-h3 {
             justify-self: center;
             align-self: center;
-            grid-area: administradoresh3;
+            grid-area: administradores-h3;
         }
-        .administradores-divs {
-            display: grid;
+        .administradores-divs {  display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
-            justify-content: space-evenly;
-            align-content: center;
             grid-template-areas:
             "emilio maria";
             grid-area: administradores-divs;
@@ -57,10 +51,9 @@
             }
         }
     }
-    .Abogada {
-        display: grid;
+    .Abogada {  display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 0.8fr 1.2fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -68,9 +61,9 @@
         "abogada-div";
         grid-area: Abogada;
         .abogada-h3 {
-            grid-area: abogada-h3;
             justify-self: center;
             align-self: center;
+            grid-area: abogada-h3;
         }
         .abogada-div {
             justify-self: center;
@@ -78,10 +71,9 @@
             grid-area: abogada-div;
         }
     }
-    .Proveedores {
-        display: grid;
+    .Proveedores {  display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 0.8fr 1.2fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -89,38 +81,42 @@
         "proveedores-divs";
         grid-area: Proveedores;
         .proveedores-h4 {
-            grid-area: proveedores-h4;
             justify-self: center;
             align-self: center;
+            grid-area: proveedores-h4;
         }
-        .proveedores-divs {
-            display: grid;
+        .proveedores-divs {  display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
             gap: 0px 0px;
             grid-auto-flow: row;
-            justify-content: space-evenly;
-            align-content: center;
-            justify-items: center;
-            align-items: center;
             grid-template-areas:
             "lomar ascensor plomero electricista";
             grid-area: proveedores-divs;
             .lomar {
+                justify-self: center;
+                align-self: center;
                 grid-area: lomar;
             }
             .ascensor {
+                justify-self: center;
+                align-self: center;
                 grid-area: ascensor;
             }
             .plomero {
-                grid-area: plomero
+                justify-self: center;
+                align-self: center;
+                grid-area: plomero;
             }
             .electricista {
+                justify-self: center;
+                align-self: center;
                 grid-area: electricista;
             }
         }
     }
 }
+
 .ImagenDeFondoEquipo ul {
     list-style: none;
     text-align: justify;

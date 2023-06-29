@@ -1,5 +1,6 @@
 #Inicio {
     background-color: $colordefuente;
+    height: 25%;
     .Indice {
         h1 {
         font-family: $fuenteprincipal;
@@ -26,6 +27,7 @@
     background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
+    height: 35%;
     font-family: $fuenteprincipal;
     text-align: center;
     display: grid;
