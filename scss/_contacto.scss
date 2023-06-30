@@ -22,7 +22,7 @@
         grid-area: formulario-h3;
     }
     .datos {  
-        margin: 2 rem;
+        margin: 2rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -48,10 +48,10 @@
         }
     }
     .consulta {
-        margin: 2 rem;
+        margin: 2rem;
         grid-area: consulta;
         textarea {
-            height: 30 rem;
+            height: 30rem;
         }
     }
     .botones {

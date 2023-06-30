@@ -343,7 +343,7 @@
   grid-area: formulario-h3;
 }
 .ImagenDeFondoContacto .datos {
-  margin: 2 rem;
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -365,11 +365,11 @@
   grid-area: mail;
 }
 .ImagenDeFondoContacto .consulta {
-  margin: 2 rem;
+  margin: 2rem;
   grid-area: consulta;
 }
 .ImagenDeFondoContacto .consulta textarea {
-  height: 30 rem;
+  height: 30rem;
 }
 .ImagenDeFondoContacto .botones {
   justify-self: center;
@@ -462,18 +462,18 @@ p {
 }
 
 main {
-  padding: 1 rem;
-  margin-top: 1.5 rem;
-  margin-bottom: 1.5 rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 section {
-  padding: 1 rem;
-  margin-top: 1.5 rem;
-  margin-bottom: 1.5 rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 legend {
