@@ -9,17 +9,20 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
 background-color: $colordefondo;
 height: 100%;
 }
+
 footer .footerCompleto {
     font-family: $fuenteprincipal;
     background-color: $colordefuente;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,67 +58,62 @@ footer .footerCompleto {
 h1 {
     color: black;
     font-family: $fuenteprincipal;
-    font-size: 5.5rem;
+    font-size: 5.5em;
     font-weight: bolder;
     font-style: none;
     text-align: center;
 }
+
 h2 {
     color: $colordetitulos;
     text-align: center;
-    font-size: 4rem;
+    font-size: 4em;
     font-family: $fuenteprincipal;
 }
+
 h3 {
     color: $colordetitulos;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     font-family: $fuenteprincipal;
 }
 
 h4 {
     color: $colordetitulos;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-family: $fuenteprincipal;
 }
+
 p {
     color: $colordefuente;
     font-size: $tamanodetexto;
     font-family: $fuenteprincipal;
 }
 
-header {
-    height: 25%;
-}
-
 main {
-    height: 15%;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 1 rem;
+    margin-top: 1.5 rem;
+    margin-bottom: 1.5 rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 section {
-    height: 35%;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-footer {
-    height: 25%;
+    padding: 1 rem;
+    margin-top: 1.5 rem;
+    margin-bottom: 1.5 rem;
 }
 
 legend {
     color: $colordefuente;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-family: $fuenteprincipal;
 }
+
 label {
     font-size: $tamanodetexto;
     font-family: $fuenteprincipal;
     color: $colordefuente;
 }
+
 @import "mediaqueries";

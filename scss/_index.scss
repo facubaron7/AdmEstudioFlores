@@ -1,6 +1,5 @@
 #Inicio {
     background-color: $colordefuente;
-    height: 25%;
     .Indice {
         h1 {
         font-family: $fuenteprincipal;
@@ -17,7 +16,7 @@
                 .nav-link {
                     color: black;
                     font-family: $fuenteprincipal;
-                    font-size: 2rem;
+                    font-size: 2em;
                 }
             }
         }
@@ -36,7 +35,6 @@
     background-image: $imagendefondo;
     background-size: cover;
     background-position: center;
-    height: 35%;
     font-family: $fuenteprincipal;
     text-align: center;
     display: grid;
